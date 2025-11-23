@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: chatroom-backend
+    env: node
+    plan: free
+    buildCommand: "npm install && npm run build"
+    startCommand: "npm start"
+    autoDeploy: true
+    envVars:
+      - key: FRONTEND_ORIGIN
+        value: https://your-frontend.netlify.app
+      - key: PORT
+        value: 3000
