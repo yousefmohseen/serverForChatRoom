@@ -18,8 +18,8 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://deft-banoffee-0ce4b7.netlify.app/",
-    methods: ["GET", "POST"]
+    origin: "https://deft-banoffee-0ce4b7.netlify.app",
+  methods: ["GET", "POST"]
   }
 });
 

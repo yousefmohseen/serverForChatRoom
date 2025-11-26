@@ -6,8 +6,13 @@ services:
     buildCommand: "npm install && npm run build"
     startCommand: "npm start"
     autoDeploy: true
+
     envVars:
       - key: FRONTEND_ORIGIN
-        value: https://your-frontend.netlify.app
+        value: https://deft-banoffee-0ce4b7.netlify.app
+
       - key: PORT
         value: 3000
+
+      - key: NODE_ENV
+        value: production
